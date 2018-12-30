@@ -37,11 +37,6 @@ def parse_magnet_page(html1):
     items = re.findall(pattern, html1)
     return items
 
-list = []
-        
-
-
-
 def main():
     mainurl = 'https://54sadsad.com/forum-103-1.html'
     get_onepage(mainurl)
