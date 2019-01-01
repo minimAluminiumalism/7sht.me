@@ -3,7 +3,7 @@
 ## 7sht.me.ChineseSubtitle.py
 This script is only created for **Chinese subtitle branch** in 7sht.me and can run nomally in it.
 
-##7sht.me_Asian.py
+## 7sht.me_Asian.py
 This script is only for **Asian Censored Branch**, which add the function to import basic information including title, magnet and actress to MongoDB, the style of text mode is like following
 
 ```{
