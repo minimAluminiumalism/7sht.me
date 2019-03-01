@@ -45,8 +45,10 @@ def write_to_excel(UUID_LIST, TORRENT_LIST):
 	ws = wb.active
 	ws.title = 'AVSheet'
 
+	#创建标题栏
 	ws.cell(row=1, column=1, value='影片番号')
 	ws.cell(row=1, column=2, value='磁力链接')
+	
 
 	index = 3
 	for (i, j) in zip(UUID_LIST, TORRENT_LIST):
