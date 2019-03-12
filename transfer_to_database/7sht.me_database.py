@@ -18,7 +18,7 @@ def get_onepage(mainurl):
 
 def parse_onepage(html):
 	soup = BeautifulSoup(html, "lxml")
-	items = soup.find_all("tbody", attrs={"id":re.compile("normalthread_\d+")})
+	items = soup.find_all("tbody", attrs={"id":re.compile(r"normalthread_\d+")})
 	urls = []
 	for item in items:
 		soup = BeautifulSoup(str(item), "lxml")
@@ -64,7 +64,7 @@ def generate_dict(url):
 		data = {
 			"Title":pre_list[0],
 			"UUID":UUID,
-			"Atress":pre_list[1],
+			"Actress":pre_list[1],
 			"Size":pre_list[2],
 			"Censored or not":pre_list[3],
 			"Magnet":magnet
