@@ -93,4 +93,3 @@ if __name__ == '__main__':
 		writer = csv.writer(csvfile)
 		writer.writerow(["Title", "UUID", "Actress", "Size", "Censored or not", "Magnet"])
 	main()
-	
